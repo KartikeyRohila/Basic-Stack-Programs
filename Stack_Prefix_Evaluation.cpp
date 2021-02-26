@@ -28,11 +28,8 @@ int main()
     getline (cin, s);
     n=s.length();
 
-    // Treverse through the whole string from right to left
     for (int i=n-1;i>=0;i--)
     {
-        //If scanned character is a number then first reverse it and after that push it to stack
-        //If it is an operator then take top 2 values of stack and after operation on them push the final value to stack
         if (s[i]==' ')
             continue;
         else if ('0'<=s[i] && s[i]<='9')

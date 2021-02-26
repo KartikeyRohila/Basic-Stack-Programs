@@ -22,21 +22,8 @@ int main()
     cin >> s;
     n=s.length();
     
-    // Treverse through the whole string from left to right
     for (int i=0;i<n;i++)
     {
-        //If character is an alphabet then add it to the 'ans' string
-        
-        //If it is a '(' then push it to stack
-        
-        //If it is a ')' then pop everything from stack and add into 'ans' string  until we found '(' and after that discard both parenthesis
-        
-        //Else if character is an operator then if stack is empty push it to stack
-        //if not then first check for precedence order of sacnned character and 'st.top()'
-        //if precedence of 'st.top()' is less, push sacnned character to stack
-        //if 'st.top()' has more precedence then pop it and add to 'ans' string until we found a less precedence operator
-        //if both have same precedence then go with the asociativity of operators
-
         if (('a'<=s[i] && s[i]<='z') || ('A'<=s[i] && s[i]<='Z'))
         {
             ans+=s[i];
@@ -70,8 +57,6 @@ int main()
         }
     }
 
-    //Pop everthing from stack and add it to the 'ans' string
-    //Print 'ans' string in the end;
     while (st.empty()==false)
     {
         char c=st.top();

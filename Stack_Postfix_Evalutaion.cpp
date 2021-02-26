@@ -9,11 +9,8 @@ int main()
     getline (cin,s);
     n=s.length();
 
-    // Treverse through the whole string from left to right
     for (int i=0;i<n;i++)
     {
-        //If scanned character is a number then push it to stack
-        //If an operator then take top 2 values of stack and after operation on them push the final value to stack
         if (s[i]==' ')
             continue;
         else if ('0'<=s[i] && s[i]<='9')
